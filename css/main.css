@@ -1,0 +1,35 @@
+/*style file created by Vincent Esparza
+===========================================
+00:css variable
+01: color
+02: Typography
+
+
+============================
+*/
+/* 00 CSS variable*/
+:root{
+--body-color: hsla(359,39%,35%,0.8);
+--page-color: hsla(120, 95%, 40%, 0.8);
+--sidebar-color: rgb(6, 80, 117);
+/** font color**/
+--font-color:rgb(66, 41, 139);
+/**h1 color -- practice**/
+--h1-color:rgb(154, 145, 145);
+}/*color*/
+body{
+    background-color: hsla(327, 30%, 41%,0.9);
+}
+#zen-intro{
+    background-color: rgb(222, 127, 18);
+    color: var(--font-color);
+}
+#zen-supporting{
+    background-color: rgb(139, 9, 9);
+}
+.sidebar{
+    background-color: rgb(3, 97, 97);
+}
+h1{
+    --h1-color:rgb(154, 145, 145);
+}
