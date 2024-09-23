@@ -14,8 +14,10 @@
 --sidebar-color: rgb(6, 80, 117);
 /** font color**/
 --font-color:rgb(66, 41, 139);
-/**h1 color -- practice**/
---h1-color:rgb(154, 145, 145);
+/** lsyout variables**/
+--page-top-position: 85%;
+--page-width: 30%;
+--bottom-bar-height: 15vh;
 }/*color*/
 body{
     background-color: hsla(327, 30%, 41%,0.9);
@@ -32,4 +34,56 @@ body{
 }
 h1{
     --h1-color:rgb(154, 145, 145);
+}
+
+/*02 layout*/
+div.explanation,div.requirements,div.benefits,div.participation{
+    position: fixed;
+    width: var(--page-width);
+    top: var(--page-top-position);
+    background-image: url(../img/newspaper3.jpg);
+}
+div.explanation{
+    left:0%;
+}
+div.requirements{
+    left:10%;
+}
+div.benefits{
+    left: 15%;
+}
+div.participation{
+    left: 20%;
+}
+
+aside.sidebar{
+    position:absolute;
+    top: 20%;
+    right: 0%;
+   /** bottom: 0;**/
+   /*adjust width/height*/
+}
+section.intro{
+    position: fixed;
+    bottom: 5%;
+    left:
+    right 80%;
+    width:30%;
+    height:
+    
+   
+    
+}
+div.extra2{
+
+    position: fixed;
+    bottom: 5%;
+    left:
+    right 80%;
+    width:30%;
+    height:
+   
+}
+    /*finish as much as you can*/
+
 }
