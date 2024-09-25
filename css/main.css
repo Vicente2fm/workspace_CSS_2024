@@ -1,0 +1,142 @@
+/* style file created by Yilian Zhang 
+ ======================================
+ 00: css variable 
+ 01: color
+ 02: Typography
+
+ ========================
+ */
+
+ /* 00 css variable */
+:root{
+    --body-color: hsla(359,39%,35%,0.8);
+    --page-color: hsla(30,32%,88%,0.9);
+    --sidebar-color: rgb(191,164,99);
+    /** font color **/
+    --font-color:rgb(2, 17, 22);
+    /** layout variables **/
+    --page-top-position: 85%;
+    --page-width: 30%;
+    --bottom-bar-height: 15vh;
+    --bottom-bar-color: hsla(27,43%,55%,1);
+}
+
+ /* 01 Color */
+ body{
+    background-color: var(--body-color);
+ }
+ #zen-intro{
+    background-color: var(--page-color);
+    color: var(--font-color);
+ }
+ #zen-supporting{
+    background-color: var(--page-color);
+ }
+.sidebar{
+    background-color: var(--sidebar-color);
+}
+h1{
+    /* finish it */
+}
+
+/*02 Layout */
+div.explanation, div.requirements,div.benefits,div.participation{
+    position: fixed;
+    width: var(--page-width);
+    top: var(--page-top-position);
+    background-image: url(../img/newspaper3.jpg);
+}
+
+
+div.explanation{
+    left:1%;
+}
+
+/* finish it for requirments/benefits/participation */
+
+aside.sidebar{
+    position: absolute;
+    top:20%;
+    right: 0;
+    /* bottom: 0; */
+    /*adjust width/height */
+    width: 20%;
+    height:100%;
+}
+
+section.intro{
+    /* finish as much as can */
+    position: fixed;
+    bottom: 5%;
+    left:30%;
+    width: 30%;
+    height:80%;
+    background-image:url(../img/newspaper3.jpg) ;
+    padding: 2%;
+    border: 2px solid rgb(4, 4, 4);
+    margin-left: 10px;
+}
+
+div.extra2{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height:var(--bottom-bar-height);
+    background-color: var(--bottom-bar-color);
+}
+
+div.extra1{
+    position: fixed;
+    bottom: 5%;
+    left:20%;
+    width: 30%;
+    height:80%;
+    background-image: url(../img/newspaper2.jpg);
+    z-index: -1;
+}
+/* create tabs for the folder */
+
+div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
+    margin-top: -5%;
+    width: 12vw;
+    background-color: bisque;
+}
+/**03: Typography **/
+@font-face {
+    font-family: 'myfont';
+    src: url(../fonts/JacquardaBastarda9-Regular.ttf);
+}
+header h1{
+    font-family: 'myfont',sans-serif
+    ;
+    font-weight: 100;
+    font-size: 1.25em;
+    letter-spacing: normal;
+    line-height: 1em;
+}
+/**header h2{
+
+    font-family: 'Faster One';
+    font-weight: 100;
+    font-size: 1.25em;
+    letter-spacing: normal;
+    line-height: 1em;
+}
+    **/
+header h2{
+    font-family: 'Jersey 15 Charted';
+    font-weight: 100;
+    font-size: 1.25em;
+    letter-spacing: normal;
+    line-height: 1em;
+}
+#design-selection {
+    visibility: hidden;
+}
+ #design-archives{
+    visibility: hidden;
+ }
+ #zen-resources{
+    visibility: hidden;
+ }
