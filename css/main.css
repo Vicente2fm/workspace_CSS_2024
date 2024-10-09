@@ -36,6 +36,7 @@ div.explanation, div.requirements,div.benefits,div.participation{
     top: var(--page-top-position);
     background-image: url(../img/newspaper3.jpg);
    /* transition: all 4s ease-in-out; */
+   transition: all 4s  ease-in-out;
 }
 
 
@@ -78,6 +79,7 @@ section.intro{
     margin-left: 10px;
     text-indent: 1px;  /* -9999px can remove the content away */
     /*put the transform and translate here */
+    transform: rotate(-10deg) translate(-100px,0);
 }
 
 div.extra2{
@@ -179,4 +181,13 @@ div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
 /**list style image**/
 ul{
     list-style: url(../img/s);
+}
+/**transform and transition**/
+section.intro h3~p{
+    opacity: 1;
+    transition: all 3s ease-in-out;
+}
+section.intro h3:hover~p{
+    transform: scale(0.2);
+    opacity:0;
 }
