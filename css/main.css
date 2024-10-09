@@ -208,3 +208,8 @@ footer{
 
 
 }
+/**fun feature**/
+
+aside.sidebar{
+    clip-path: polygon(0 0 ,0 60%,50% 90%, 100% 60%,50% 0);
+}
