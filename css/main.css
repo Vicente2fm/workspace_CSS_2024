@@ -201,8 +201,9 @@ section.intro h3:hover~p{
 }
 footer{
     position: fixed;
-    bottom: 1vh;
+   bottom: 1vh;
     left:50%;
+    z-index: 7;
     animation: 10s ease-in-out 5s alternate infinite backandforth;
 
 
