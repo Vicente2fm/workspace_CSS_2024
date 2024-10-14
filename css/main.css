@@ -1,4 +1,17 @@
-root{
+/* style file created by Yilian Zhang
+ ======================================
+ 00: css variable
+ 01: color
+ 02: Layout
+ 03: Typography
+ 04: Transitions, Animations, and Selector practices
+ 05: Funcy stuff --Please explore yourself.
+
+ ========================
+ */
+
+ /* 00 css variable */
+ :root{
     --body-color: hsla(359,39%,35%,0.8);
     --page-color: hsla(30,32%,88%,0.9);
     --sidebar-color: rgb(191,164,99);
@@ -36,7 +49,7 @@ div.explanation, div.requirements,div.benefits,div.participation{
     top: var(--page-top-position);
     background-image: url(../img/newspaper3.jpg);
    /* transition: all 4s ease-in-out; */
-   transition: all 4s  ease-in-out;
+    transition: all 4s ease-in-out;
 }
 
 
@@ -99,9 +112,10 @@ div.extra1{
     height:80%;
     background-image: url(../img/newspaper2.jpg);
     z-index: -1;
+    transform: rotate(15deg) translate(200px,-100px);
 }
 
-/* create tabs for the folder */ 
+/* create tabs for the folder */
 div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
     margin-top: -5%;
     width: 12vw;
@@ -169,7 +183,7 @@ p:nth-child(2n+1){
     background-color: aquamarine;
 }
 
-/** Try one text shadow **/ 
+/** Try one text shadow **/
 
 /** Border radius for the tab**/
 div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
@@ -178,38 +192,40 @@ div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
     padding-left: 5px;
 }
 
-/**list style image**/
+/** list style image **/
 ul{
-    list-style: url(../img/s);
+    list-style-image: url(../img/star.png);
 }
-/**transform and transition**/
-section.intro h3~p{
+
+/** transform  and transition **/
+section.intro h3 ~p{
     opacity: 1;
     transition: all 3s ease-in-out;
 }
-section.intro h3:hover~p{
+
+section.intro h3:hover ~p{
     transform: scale(0.2);
     opacity:0;
 }
-/**play**/
+/** Please play with those numbers */
 @keyframes backandforth{
-    from {transform: translate(-500px,0);}
-    50%{transform:  translate(-200px,0);}
-    20%{transform:  translate(200px,0);}
-    30%{transform:  translate(600px,0);}
-    90%{transform:  translate(600px,0);}
+    from{transform: translate(-500px,0);}
+    30%{transform: translate(-300px,0);}
+    50%{transform: translate(300px,0);}
+    70%{transform: translate(500px,0);}
+    90%{transform: translate(600px,0);}
 }
+
 footer{
     position: fixed;
-   bottom: 1vh;
-    left:50%;
-    z-index: 7;
-    animation: 10s ease-in-out 5s alternate infinite backandforth;
-
-
+    bottom: 1vh;
+    left: 50%;
+    z-index: 4;
+    animation: 10s ease-in-out 2s alternate infinite backandforth;
 }
-/**fun feature**/
+
+/* 05 fun feature */
+
 
 aside.sidebar{
-    clip-path: polygon(0 0 ,0 60%,50% 90%, 100% 60%,50% 0);
-}
+    clip-path: polygon(0 67%, 0 0, 92% 1%, 88% 65%, 48% 100%);}
