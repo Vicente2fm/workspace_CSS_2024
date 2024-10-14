@@ -39,7 +39,7 @@
     background-color: var(--sidebar-color);
 }
 h1{
-    /* finish it */
+   
 }
 
 /*02 Layout */
@@ -226,6 +226,43 @@ footer{
 
 /* 05 fun feature */
 
+header {
+    position: relative; /* or absolute, depending on your layout */
+    left: 195%; /* Adjust this value to move the header to the right */
+    margin-top: 70px; 
+    background-color: white;
+
+}
 
 aside.sidebar{
     clip-path: polygon(0 68%, 0 0, 93% 0, 90% 67%, 48% 100%);}
+
+
+   
+/*css grid*/
+.one{
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  
+  .two{
+    grid-column: 1/ 4;
+    grid-row: 1/2;
+  }
+  .three{
+    grid-column: 1/ 2;
+    grid-row: 2/4;
+  }
+  .four{
+    grid-column: 4/ 5;
+    grid-row: 1/4;
+  }
+  .five{
+    grid-column: 1/ 4;
+    grid-row: 4/5;
+  }
+  .six{
+    grid-column: 3/ 5;
+    grid-row: 3/5;
+  }
+  
